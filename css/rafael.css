@@ -69,3 +69,7 @@
     color: white;
     font-family: Roboto;
 }
+
+.bg-red {
+    background-image: linear-gradient(to left top, #db1e1e, #c54a4a)
+}
