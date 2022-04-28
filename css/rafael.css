@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(253, 227, 227));
+}
+
 .bg-navbar {
     background-image: linear-gradient(to left top, #adadad, #ffffff);
 }
 
 .btn-cor {
-    background-color: #6ca2ce;
+    border: 1px solid #7a0d09;
+    background-color: #941510;
     transition: 0.3s;
+    color: white;
 }
 
 .btn-cor:hover {
-    background-color: #217cc7;
+    background-color: #630805;
     transition: 0.3s;
 }
 
@@ -66,10 +72,43 @@
 
 #desenvolvido {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: Roboto;
+    font-size: 2vh;
 }
 
 .bg-red {
     background-image: linear-gradient(to left top, #db1e1e, #c54a4a)
+}
+
+legend {
+    font-family: Roboto;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(231, 68, 68);
+    border-radius: 8px;
+}
+
+.btn-botao {
+    font-size: 17px;
+    color: white;
+    font-family: Roboto;
+    align-items: center;
+    background-color: #941510;
+    border: 1px solid #7a0d09;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.btn-botao:hover {
+    transition: 0.3s;
+    background-color: #630805;
+    color: white;
+}
+
+.bg-copyright {
+    font-family: Poppins;
+    font-size: 18px;
 }
