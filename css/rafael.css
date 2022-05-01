@@ -89,7 +89,7 @@ legend {
 
 .bg-title {
     font-family: Roboto;
-    color: rgb(231, 68, 68);
+    color: #941510;
     text-align: center;
     font-size: 9vh;
 }
@@ -156,7 +156,7 @@ legend {
     width: 388px;
     height: 2px;
     display: block;
-    background: rgb(231, 68, 68);
+    background: #941510;
     transition: 300ms;
 }
 
@@ -172,6 +172,6 @@ legend {
     width: 250px;
     height: 2px;
     display: block;
-    background: rgb(231, 68, 68);
+    background: #941510;
     transition: 300ms;
 }
