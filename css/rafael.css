@@ -28,7 +28,7 @@
 }
 
 .bg-rafael {
-    background-image: url("../img/noticias etec.png");
+    background-image: url("../img/MicrosoftTeams-image.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -77,27 +77,18 @@
     background-image: linear-gradient(to left top, #db1e1e, #c54a4a)
 }
 
-legend {
-    font-family: Roboto;
-    font-size: 25px;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(231, 68, 68);
-    border-radius: 8px;
-}
-
 .bg-title {
     font-family: Roboto;
     color: #941510;
     text-align: center;
-    font-size: 9vh;
+    font-size: 7vh;
+    -webkit-text-stroke: #7a0d09 2px;
 }
 
 .bg-title2 {
     font-family: Roboto;
     color: black;
-    font-size: 9vh;
+    font-size: 7vh;
     margin-left: 5vh;
 }
 
