@@ -27,11 +27,16 @@
     transition: 0.3s;
 }
 
-.bg-rafael {
-    background-image: url("../img/MicrosoftTeams-image.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.bg-bord {
+    border-radius: 50%;
+}
+
+.img-banner {
+    height: 40rem;
+    min-height: 40rem;
+    max-height: 40rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 .bg-pesquisar {
