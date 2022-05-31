@@ -48,14 +48,13 @@
     transition: 0.3s;
     color: #630805;
     font-weight: 600;
-    border-bottom: 1px solid #630805;
 }
 
 #bg-font {
     color: black;
     transition: 0.3s;
     font-family: Roboto;
-    font-size: 3vh;
+    font-size: 2vh;
     margin: 3px;
     color: #000;
     font-weight: 500;
@@ -71,9 +70,9 @@
 }
 
 .img-banner {
-    height: 30rem;
-    min-height: 30rem;
-    max-height: 30rem;
+    height: 35rem;
+    min-height: 35rem;
+    max-height: 35rem;
     width: 100%;
     object-fit: cover;
 }
@@ -233,7 +232,28 @@
 
 #bg-dens {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     font-family: Roboto;
     color: rgb(133, 133, 133);
+}
+
+.btn-botaoform {
+    font-size: 17px;
+    color: #941510;
+    font-family: Roboto;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.btn-botaoform:hover {
+    transition: 0.3s;
+    background-color: #630805;
+    color: white;
+}
+
+.bg-Copyright {
+    font-size: 2vh;
+    font-family: Roboto;
 }
