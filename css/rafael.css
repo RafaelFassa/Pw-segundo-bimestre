@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.menu-bar {
-    background-image: linear-gradient(to left top, #adadad, #ffffff);
-    box-shadow: 3px 1.5px 1.5px black;
-}
-
-.bg-borda {
+.bg-menu {
     box-shadow: 3px 1.5px 1.5px black;
 }
 
@@ -20,49 +15,43 @@
     transition: 0.3s;
 }
 
-.nav-link {
-    font-size: 20px;
-    margin: 3px;
-    color: #000;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.navbar-nav {
-    text-align: right;
-    margin-right: 20px;
-}
-
-.menu-bar .navbar-toggle {
-    padding-right: 20px;
-    outline: none;
-    border: none;
-}
-
-.nav .fa {
-    color: #000;
-    font-size: 26px;
-}
-
-.nav-link:hover {
-    transition: 0.3s;
-    color: #630805;
-    font-weight: 600;
-}
-
-#bg-font {
+#font {
+    font-family: Poppins;
+    font-size: 1rem;
     color: black;
+    align-items: center;
     transition: 0.3s;
-    font-family: Roboto;
-    font-size: 2vh;
-    margin: 3px;
-    color: #000;
-    font-weight: 500;
 }
 
-#bg-font:hover {
-    color: #941510;
+#font:hover {
     transition: 0.3s;
+    color: #941510;
+}
+
+#home {
+    font-family: Poppins;
+    font-size: 1rem;
+    color: #941510;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#home:hover {
+    transition: 0.3s;
+    color: black;
+}
+
+#font-ico {
+    font-family: Roboto;
+    font-size: 2rem;
+    color: black;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#font-ico:hover {
+    transition: 0.3s;
+    color: #941510;
 }
 
 .bg-bord {
@@ -94,19 +83,47 @@
 }
 
 .bg-footer {
-    background-image: linear-gradient(to left top, #db1e1e, #c54a4a)
+    background: #444444;
 }
 
-#redes {
+.bg-importante {
+    font-size: 3vh;
+    font-family: Roboto;
     color: white;
-    align-items: center;
-    transition: 0.3s;
-    font-size: 30px;
+    margin: 0px 50px;
 }
 
-#redes:hover {
-    color: rgb(126, 126, 126);
-    transition: 0.3s;
+.links {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin: 0px 50px;
+}
+
+.ico {
+    color: #c54a4a;
+}
+
+.links:hover {
+    color: #941510;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-rede {
+    background: #415561;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.color {
+    color: #415561;
+}
+
+.btn-rede:hover {
+    background: #941510;
+    transition: all 0.3s;
 }
 
 .bg-red {
@@ -180,26 +197,10 @@
 
 .d::after {
     content: '';
-    width: 388px;
-    height: 2px;
+    width: 50px;
+    height: 3px;
     display: block;
     background: #941510;
-}
-
-.d2 {
-    line-height: 0.9em;
-    text-decoration: none;
-    font-size: 1vh;
-    font-family: Poppins;
-}
-
-.d2::after {
-    content: '';
-    width: 250px;
-    height: 2px;
-    display: block;
-    background: #941510;
-    transition: 300ms;
 }
 
 .lin-banner {
