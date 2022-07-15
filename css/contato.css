@@ -4,7 +4,7 @@ body {
 }
 
 .bg-title-contato {
-    font-family: Roboto;
+    font-family: Poppins;
     color: #415561;
     font-size: 4vh;
     margin-left: 60px;
@@ -24,6 +24,10 @@ body {
     display: block;
     background: #941510;
     margin-left: 60px;
+}
+
+.bg-cor {
+    background: white;
 }
 
 .bg-marge {
@@ -70,7 +74,7 @@ section {
 }
 
 .contato {
-    color: #b3aeae;
+    color: #818181;
 }
 
 .inf {
