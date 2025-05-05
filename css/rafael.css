@@ -127,8 +127,8 @@
 }
 
 .btn-rede {
-    background: #415561;
-    color: white;
+    background: #fdfeff;
+    color: rgb(0, 0, 0);
     border-radius: 50%;
     transition: all 0.3s;
 }
@@ -139,6 +139,7 @@
 
 .btn-rede:hover {
     background: #941510;
+    color: white;
     transition: all 0.3s;
 }
 
