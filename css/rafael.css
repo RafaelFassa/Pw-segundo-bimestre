@@ -10,6 +10,10 @@
     color: white;
 }
 
+.teste {
+    margin-left: 250px;
+}
+
 .btn-cor:hover {
     background-color: #630805;
     transition: 0.3s;
@@ -105,11 +109,16 @@
     margin: 0px 50px;
 }
 
+.useful-links {
+    list-style: none;
+}
+
 .links {
     color: white;
     text-decoration: none;
     transition: all 0.3s;
     margin: 0px 50px;
+    list-style: none;
 }
 
 #mar {
