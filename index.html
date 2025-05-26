@@ -13,16 +13,23 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-menu" aria-label="Main navigation">
+        <!-- aria-label="Main navigation": ajuda leitores de tela a identificar esta região como a navegação principal -->
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="img-fluid" src="img/brand 2.png" alt="Logo da Etec"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Alternar navegação">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="img/brand 2.png" alt="Logo da Etec">
+                <!-- alt="Logo da Etec": fornece texto alternativo descritivo para usuários com deficiência -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" 
+                    aria-controls="navbarsExample07" aria-expanded="false" aria-label="Alternar navegação">
+                <!-- aria-controls, aria-expanded, aria-label: permitem que tecnologias assistivas saibam o que o botão faz e o que ele controla -->
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" id="home" href="#" aria-current="page">Home</a>
+                        <!-- aria-current="page": indica qual item está atualmente ativo, útil para navegação por leitores de tela -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="font" href="https://eteclins.com.br/2022/#%22">Etec</a>
@@ -31,7 +38,9 @@
                         <a class="nav-link" id="font" href="contato.html">Contato</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" id="font" aria-expanded="false">Outros</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                           id="font" aria-expanded="false">Outros</a>
+                        <!-- aria-haspopup, aria-expanded: informam que o link abre um menu dropdown e indicam seu estado (aberto/fechado) -->
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item bg-drop" href="https://www.eteclins.com.br/vestibulinho/">Vestibulinho</a>
                             <div class="dropdown-divider"></div>
@@ -43,10 +52,16 @@
                 </ul>
                 <ul class="navbar-nav my-2 my-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" id="font-icon" href="https://www.facebook.com/etecdelins" aria-label="Facebook da Etec"> <i class="fa-brands fa-facebook" aria-hidden="true"></i> </a>
+                        <a class="nav-link" id="font-icon" href="https://www.facebook.com/etecdelins" aria-label="Facebook da Etec">
+                            <!-- aria-label: descreve o propósito do link com o ícone (já que só o ícone visual não é suficiente para leitores de tela) -->
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                            <!-- aria-hidden="true": oculta o ícone decorativo do leitor de tela para evitar redundância -->
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="font-icon" href="https://www.instagram.com/etec_lins/" aria-label="Instagram da Etec"> <i class="fa-brands fa-instagram" aria-hidden="true"></i> </a>
+                        <a class="nav-link" id="font-icon" href="https://www.instagram.com/etec_lins/" aria-label="Instagram da Etec">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -54,221 +69,273 @@
     </nav>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel" aria-label="Carrossel de imagens">
+        <!-- aria-label="Carrossel de imagens": descreve a função do carrossel para usuários de leitores de tela -->
+        
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active" aria-label="Slide 1"></li>
+            <!-- aria-label nos indicadores: permite que usuários saibam a que slide se referem -->
             <li data-target="#myCarousel" data-slide-to="1" aria-label="Slide 2"></li>
             <li data-target="#myCarousel" data-slide-to="2" aria-label="Slide 3"></li>
         </ol>
+    
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="first-slide img-banner" src="img/carrosel 1.svg" alt="Primeiro slide com exemplo de manchete">
+                <!-- alt: texto alternativo descrevendo a imagem, essencial para quem não vê as imagens -->
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam...</p>
                         <p><a class="btn btn-lg btn-botao" href="#" role="button">Sign up today</a></p>
+                        <!-- role="button": reforça que o link funciona como botão (útil para tecnologias assistivas) -->
                     </div>
                 </div>
             </div>
+    
             <div class="carousel-item">
                 <img class="second-slide img-banner" src="img/carrosel 2.svg" alt="Segundo slide com exemplo de manchete">
+                <!-- alt: novamente garantindo descrição acessível para imagens -->
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p>...</p>
                         <p><a class="btn btn-lg btn-botao" href="#" role="button">Learn more</a></p>
                     </div>
                 </div>
             </div>
+    
             <div class="carousel-item">
                 <img class="third-slide img-banner" src="img/carrosel 3.svg" alt="Terceiro slide com exemplo de manchete">
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p>...</p>
                         <p><a class="btn btn-lg btn-botao" href="#" role="button">Browse gallery</a></p>
                     </div>
                 </div>
             </div>
         </div>
+    
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" aria-label="Slide anterior">
+            <!-- aria-label="Slide anterior": descreve a ação do controle para usuários de leitores de tela -->
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- aria-hidden="true": oculta ícone puramente visual do leitor de tela -->
             <span class="sr-only">Anterior</span>
+            <!-- sr-only: texto visível apenas para leitores de tela, reforçando a ação -->
         </a>
+    
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" aria-label="Próximo slide">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Próximo</span>
         </a>
     </div>
+    
 
     <br>
     <br>
 
     <div class="container" aria-labelledby="main-news"></div>
-    <div class="row">
-        <div class="col-12 col-sm-5 col-md-5 teste">
-            <div class="row">
-                <h1 id="main-news" class="text-dark bg-title2"># Principais Notícias</h1>
-            </div>
-        </div>
-    </div>
-    </div>
+<!-- aria-labelledby="main-news": conecta esta região ao h1 com id="main-news", para que leitores de tela entendam que esta área está ligada ao título principal -->
 
-    <div class="container">
+<div class="row">
+    <div class="col-12 col-sm-5 col-md-5 teste">
         <div class="row">
-            <div class="col-12 col-sm-4 col-md-4">
-                <div class="container-fluid">
-                    <div class="row mt-3">
-                        <div class="col-12 col-sm-3 col-md-3">
-                            <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia 1">
-                        </div>
-                        <div class="col-12 col-sm-9 col-md-9">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt similique.</p>
-                        </div>
+            <h1 id="main-news" class="text-dark bg-title2"># Principais Notícias</h1>
+            <!-- id="main-news": serve como referência para o aria-labelledby acima -->
+            <!-- Uso de <h1>: importante para hierarquia semântica e navegação por leitores de tela -->
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-4 col-md-4">
+            <!-- Coluna de notícias pequenas -->
+            <div class="container-fluid">
+                <div class="row mt-3">
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia 1">
+                        <!-- alt: fornece descrição alternativa essencial para quem não enxerga a imagem -->
                     </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row mt-3">
-                        <div class="col-12 col-sm-3 col-md-3">
-                            <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia 2">
-                        </div>
-                        <div class="col-12 col-sm-9 col-md-9">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt similique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row mt-3">
-                        <div class="col-12 col-sm-3 col-md-3">
-                            <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia 3">
-                        </div>
-                        <div class="col-12 col-sm-9 col-md-9">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt similique.</p>
-                        </div>
+                    <div class="col-12 col-sm-9 col-md-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-7 col-md-7">
-                <div class="container-fluid">
-                    <div class="row mt-3">
-                        <div class="col-12 col-sm-5 col-md-5">
-                            <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia principal">
-                        </div>
-                        <div class="col-12 col-sm-7 col-md-7">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero deleniti molestiae autem? Totam nesciunt cum temporibus hic digníssimos ipsam laboriosam pariatur, eius consectetur id consequuntur possimus libero
-                                nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quam.</p>
-                        </div>
+
+            <div class="container-fluid">
+                <div class="row mt-3">
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia 2">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row mt-3">
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia 3">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-7 col-md-7">
+            <!-- Coluna de notícia principal -->
+            <div class="container-fluid">
+                <div class="row mt-3">
+                    <div class="col-12 col-sm-5 col-md-5">
+                        <img class="img-fluid bg-bord" src="img/sem-foto.jpg" alt="Imagem ilustrativa para notícia principal">
+                        <!-- alt: novamente garantindo descrição acessível para imagem principal -->
+                    </div>
+                    <div class="col-12 col-sm-7 col-md-7">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <br>
     <br>
 
     <hr>
 
-    <h1 class="bg-title"><b> #Noticias por curso </b></h1>
+<h1 class="bg-title"><b> #Noticias por curso </b></h1>
+<!-- <h1>: marcação semântica correta de título principal da seção, importante para navegação por headings -->
 
+<br>
+<center>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-12">
+                <span class="d">
+                    <h3>
+                        <p>Novidades entre os cursos</p>
+                    </h3>
+                </span>
+                <!-- <h3>: subtítulo, mantém a hierarquia semântica -->
+            </div>
+        </div>
+    </div>
     <br>
-    <center>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-12">
-                    <span class="d"><h3><p>Novidades entre os cursos</p></h3></span>
-                </div>
-            </div>
-        </div>
-        <br>
 
-        <div class="container-fluid">
-            <div class="row mt-3">
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="" style="width: 18rem;">
-                        <img class="card-img-top bg-bord" src="img/marco.jpg" alt="Imagem ilustrativa para Noticia 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Noticia 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 1">Confira</a>
-                        </div>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <!-- Cada bloco abaixo representa uma notícia -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="" style="width: 18rem;">
+                    <img class="card-img-top bg-bord" src="img/marco.jpg" alt="Imagem ilustrativa para Noticia 1">
+                    <!-- alt: oferece descrição acessível para quem usa leitor de tela -->
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 1</h5>
+                        <!-- <h5>: título da notícia, importante para estrutura -->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 1">Confira</a>
+                        <!-- aria-label no link: descreve a ação do botão/link de forma mais detalhada para leitores de tela -->
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="" style="width: 18rem;">
-                        <img class="card-img-top bg-bord" src="img/img1.jpg" alt="Imagem ilustrativa para Noticia 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Noticia 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 2">Confira</a>
-                        </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="" style="width: 18rem;">
+                    <img class="card-img-top bg-bord" src="img/img1.jpg" alt="Imagem ilustrativa para Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 2">Confira</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="" style="width: 18rem;">
-                        <img class="card-img-top bg-bord" src="img/img5.jpg" alt="Imagem ilustrativa para Noticia 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Noticia 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 3">Confira</a>
-                        </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="" style="width: 18rem;">
+                    <img class="card-img-top bg-bord" src="img/img5.jpg" alt="Imagem ilustrativa para Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 3">Confira</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="" style="width: 18rem;">
-                        <img class="card-img-top bg-bord" src="img/vestibulinho.jpg" alt="Imagem ilustrativa para Noticia 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Noticia 4</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 4">Confira</a>
-                        </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="" style="width: 18rem;">
+                    <img class="card-img-top bg-bord" src="img/vestibulinho.jpg" alt="Imagem ilustrativa para Noticia 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-botao" aria-label="Confira mais sobre Noticia 4">Confira</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
         </br>
 
         <br>
-        <span class="d"><h3><p>Outros cursos</p></h3></span>
-
+        <span class="d">
+            <h3>
+                <p>Outros cursos</p>
+            </h3>
+        </span>
+        <!-- <h3>: subtítulo correto para estruturar a hierarquia de títulos -->
+        
         <br>
-
+        
         <p>
-            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" aria-label="Mostrar informações sobre Linguagens">
-            Linguagens <i class="fa-solid fa-language" aria-hidden="true"></i>
+            <!-- Botões para expandir/colapsar conteúdo -->
+            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample1" 
+                aria-expanded="false" aria-controls="collapseExample1" aria-label="Mostrar informações sobre Linguagens">
+                Linguagens <i class="fa-solid fa-language" aria-hidden="true"></i>
             </button>
-
-            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" aria-label="Mostrar informações sobre Contabilidade">
-               Contabilidade <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+        
+            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample2" 
+                aria-expanded="false" aria-controls="collapseExample2" aria-label="Mostrar informações sobre Contabilidade">
+                Contabilidade <i class="fa-solid fa-calculator" aria-hidden="true"></i>
             </button>
-
-            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" aria-label="Mostrar informações sobre Recursos Humanos">
-               Recursos Humanos <i class="fa-solid fa-children" aria-hidden="true"></i>
+        
+            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample3" 
+                aria-expanded="false" aria-controls="collapseExample3" aria-label="Mostrar informações sobre Recursos Humanos">
+                Recursos Humanos <i class="fa-solid fa-children" aria-hidden="true"></i>
             </button>
-
-            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" aria-label="Mostrar informações sobre Enfermagem">
-              Enfermagem <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
-             </button>
+        
+            <button class="btn btn-botao mt-3" type="button" data-toggle="collapse" data-target="#collapseExample4" 
+                aria-expanded="false" aria-controls="collapseExample4" aria-label="Mostrar informações sobre Enfermagem">
+                Enfermagem <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
+            </button>
         </p>
-
-    </center>
-
-    <div class="collapse" id="collapseExample1">
-        <div class="card card-body" aria-labelledby="collapseExample1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-7 col-md-7">
-                        <div class="rom">
-                            <h1 class="text-dark">#Noticia Linguagens <i class="fa-solid fa-language" aria-hidden="true"></i></h1>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-5 col-md-5">
-                                    <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Linguagens">
-                                </div>
-                                <div class="col-12 col-sm-7 col-md-7">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero deleniti molestiae autem? Totam nesciunt cum temporibus hic dignissimos ipsam laboriosam pariatur, eius consectetur id consequuntur possimus
-                                        libero nobis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quam.</p>
+        <!-- Cada botão usa aria-expanded + aria-controls para informar leitores de tela sobre estado colapsado/expandido -->
+        <!-- aria-label fornece contexto adicional, já que só “Linguagens” pode ser vago em modo isolado -->
+        
+        </center>
+        
+        <!-- Bloco colapsável Linguagens -->
+        <div class="collapse" id="collapseExample1">
+            <div class="card card-body" aria-labelledby="collapseExample1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="rom">
+                                <h1 class="text-dark">#Noticia Linguagens <i class="fa-solid fa-language" aria-hidden="true"></i></h1>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row mt-3">
+                                    <div class="col-12 col-sm-5 col-md-5">
+                                        <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Linguagens">
+                                    </div>
+                                    <div class="col-12 col-sm-7 col-md-7">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem repellat et ducimus, earum repellendus corporis officiis pariatur perspiciatis fugiat aliquid cumque quia possimus non expedita ipsa doloremque minus. Odio.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odit itaque praesentium tempora alias facere! Rerum maiores natus iste quasi laudantium nisi quas inventore, est quaerat dolorem sunt odio sit.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -276,24 +343,24 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="collapse" id="collapseExample2">
-        <div class="card card-body" aria-labelledby="collapseExample2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-7 col-md-7">
-                        <div class="rom">
-                            <h1 class="text-dark">#Noticia Contabilidade <i class="fa-solid fa-calculator" aria-hidden="true"></i></h1>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-5 col-md-5">
-                                    <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Contabilidade">
-                                </div>
-                                <div class="col-12 col-sm-7 col-md-7">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero deleniti molestiae autem? Totam nesciunt cum temporibus hic dignissimos ipsam laboriosam pariatur, eius consectetur id consequuntur possimus
-                                        libero nobis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quam.</p>
+        
+        <!-- Bloco colapsável Contabilidade -->
+        <div class="collapse" id="collapseExample2">
+            <div class="card card-body" aria-labelledby="collapseExample2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="rom">
+                                <h1 class="text-dark">#Noticia Contabilidade <i class="fa-solid fa-calculator" aria-hidden="true"></i></h1>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row mt-3">
+                                    <div class="col-12 col-sm-5 col-md-5">
+                                        <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Contabilidade">
+                                    </div>
+                                    <div class="col-12 col-sm-7 col-md-7">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem repellat et ducimus, earum repellendus corporis officiis pariatur perspiciatis fugiat aliquid cumque quia possimus non expedita ipsa doloremque minus. Odio.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odit itaque praesentium tempora alias facere! Rerum maiores natus iste quasi laudantium nisi quas inventore, est quaerat dolorem sunt odio sit.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -301,24 +368,24 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="collapse" id="collapseExample3">
-        <div class="card card-body" aria-labelledby="collapseExample3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-7 col-md-7">
-                        <div class="rom">
-                            <h1 class="text-dark">#Noticia Recursos Humanos <i class="fa-solid fa-children" aria-hidden="true"></i></h1>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-5 col-md-5">
-                                    <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Recursos Humanos">
-                                </div>
-                                <div class="col-12 col-sm-7 col-md-7">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero deleniti molestiae autem? Totam nesciunt cum temporibus hic dignissimos ipsam laboriosam pariatur, eius consectetur id consequuntur possimus
-                                        libero nobis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quam.</p>
+        
+        <!-- Bloco colapsável Recursos Humanos -->
+        <div class="collapse" id="collapseExample3">
+            <div class="card card-body" aria-labelledby="collapseExample3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="rom">
+                                <h1 class="text-dark">#Noticia Recursos Humanos <i class="fa-solid fa-children" aria-hidden="true"></i></h1>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row mt-3">
+                                    <div class="col-12 col-sm-5 col-md-5">
+                                        <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Recursos Humanos">
+                                    </div>
+                                    <div class="col-12 col-sm-7 col-md-7">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem repellat et ducimus, earum repellendus corporis officiis pariatur perspiciatis fugiat aliquid cumque quia possimus non expedita ipsa doloremque minus. Odio.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odit itaque praesentium tempora alias facere! Rerum maiores natus iste quasi laudantium nisi quas inventore, est quaerat dolorem sunt odio sit.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -326,24 +393,24 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="collapse" id="collapseExample4">
-        <div class="card card-body" aria-labelledby="collapseExample4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-7 col-md-7">
-                        <div class="rom">
-                            <h1 class="text-dark">#Noticia Enfermagem <i class="fa-solid fa-stethoscope" aria-hidden="true"></i></h1>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-5 col-md-5">
-                                    <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Enfermagem">
-                                </div>
-                                <div class="col-12 col-sm-7 col-md-7">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero deleniti molestiae autem? Totam nesciunt cum temporibus hic dignissimos ipsam laboriosam pariatur, eius consectetur id consequuntur possimus
-                                        libero nobis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quam.</p>
+        
+        <!-- Bloco colapsável Enfermagem -->
+        <div class="collapse" id="collapseExample4">
+            <div class="card card-body" aria-labelledby="collapseExample4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="rom">
+                                <h1 class="text-dark">#Noticia Enfermagem <i class="fa-solid fa-stethoscope" aria-hidden="true"></i></h1>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row mt-3">
+                                    <div class="col-12 col-sm-5 col-md-5">
+                                        <img class="img-fluid" src="img/sem-foto.jpg" alt="Imagem ilustrativa para Enfermagem">
+                                    </div>
+                                    <div class="col-12 col-sm-7 col-md-7">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem repellat et ducimus, earum repellendus corporis officiis pariatur perspiciatis fugiat aliquid cumque quia possimus non expedita ipsa doloremque minus. Odio.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odit itaque praesentium tempora alias facere! Rerum maiores natus iste quasi laudantium nisi quas inventore, est quaerat dolorem sunt odio sit..</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -351,45 +418,87 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <br>
     <div class="container-fluid bg-footer" aria-labelledby="footer-section">
+        <!-- ACESSIBILIDADE: usando aria-labelledby para identificar a seção -->
         <div class="row mt-3">
             <div class="col-12 col-sm-6 col-md-3">
                 <br>
                 <br>
                 <h3 class="bg-importante" id="useful-links"><b>LINKS ÚTEIS</b></h3>
+                <!-- ACESSIBILIDADE: heading com ID associado -->
                 <br>
                 <ul aria-labelledby="useful-links" class="useful-links">
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Home</a></li>
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Etec</a></li>
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Contato</a></li>
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Vestibulinho</a></li>
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Informações</a></li>
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Sobre a escola</a></li>
+                    <!-- ACESSIBILIDADE: lista com rótulo aria-labelledby -->
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        <!-- ACESSIBILIDADE: ícone marcado como decorativo com aria-hidden -->
+                        Home</a>
+                    </li>
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Etec</a>
+                    </li>
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Contato</a>
+                    </li>
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Vestibulinho</a>
+                    </li>
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Informações</a>
+                    </li>
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Sobre a escola</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                 <br>
                 <br>
                 <h3 class="bg-importante" id="important-links"><b>LINKS IMPORTANTES</b></h3>
+                <!-- ACESSIBILIDADE: heading com ID associado -->
                 <br>
                 <ul aria-labelledby="important-links" class="useful-links">
-                    <li><a class="links" href="https://www.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Centro Paula Souza</a></li>
-                    <li><a class="links" href="http://www.etec.sp.gov.br/view/Default.aspx"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> E-mail Institucional</a></li>
-                    <li><a class="links" href="https://nsa.cps.sp.gov.br/"><i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i> Sistema Acadêmico (NSA)</a></li>
+                    <!-- ACESSIBILIDADE: lista com rótulo aria-labelledby -->
+                    <li><a class="links" href="https://www.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Centro Paula Souza</a>
+                    </li>
+                    <li><a class="links" href="http://www.etec.sp.gov.br/view/Default.aspx">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        E-mail Institucional</a>
+                    </li>
+                    <li><a class="links" href="https://nsa.cps.sp.gov.br/">
+                        <i class="fa-solid fa-chevron-right ico" aria-hidden="true"></i>
+                        Sistema Acadêmico (NSA)</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                 <br>
                 <br>
                 <h3 class="bg-importante" id="contact-info"><b>CONTATO</b></h3>
+                <!-- ACESSIBILIDADE: heading com ID associado -->
                 <br>
                 <address aria-labelledby="contact-info">
-                    <p class="text-light" id="mar">Rua São Pedro, 300<br> Vila Perin<br> Lins/SP</p>
+                    <!-- ACESSIBILIDADE: address marcado com aria-labelledby -->
+                    <p class="text-light" id="mar">
+                        Rua São Pedro, 300<br> Vila Perin<br> Lins/SP
+                    </p>
                     <br>
-                    <p class="text-light" id="mar"><b>WhatsApp:</b> (14) 3523-1217<br><b>Telefone:</b> (14) 3523-4859<br> <b>Email:</b> <a href="mailto:e148dir@cps.sp.gov.br">e148dir@cps.sp.gov.br</a></p>
+                    <p class="text-light" id="mar">
+                        <b>WhatsApp:</b> (14) 3523-1217
+                        <br><b>Telefone:</b> (14) 3523-4859
+                        <br> <b>Email:</b>
+                        <a href="mailto:e148dir@cps.sp.gov.br">e148dir@cps.sp.gov.br</a>
+                        <!-- ACESSIBILIDADE: link de email usando mailto -->
+                    </p>
                 </address>
                 <br>
                 <br>
@@ -397,10 +506,18 @@
             <div class="col-12 col-sm-6 col-md-3">
                 <br>
                 <br>
-                <img class="img-fluid" src="img/download.png" alt="Logo da Etec de Lins"><br>
+                <img class="img-fluid" src="img/download.png" alt="Logo da Etec de Lins">
+                <!-- ACESSIBILIDADE: imagem com texto alternativo descritivo -->
                 <br>
-                <button type="button" class="btn btn-rede" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></button>
-                <button type="button" class="btn btn-rede" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></button>
+                <br>
+                <button type="button" class="btn btn-rede" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <!-- ACESSIBILIDADE: botão com rótulo aria-label e ícone decorativo -->
+                </button>
+                <button type="button" class="btn btn-rede" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <!-- ACESSIBILIDADE: botão com rótulo aria-label e ícone decorativo -->
+                </button>
                 <br>
                 <br>
             </div>
@@ -410,7 +527,10 @@
                 <hr>
                 <p class="text-light text-center">© Copyright Etec News. Todos os direitos reservados.</p>
                 <a class="" href="#" id="bg-dens">
-                    <p class="text-light text-center bg-dens">Desenvolvido por: Rafael<b>Fassa</b> e Marco<b>Antonio</b></p>
+                    <p class="text-light text-center bg-dens">
+                        Desenvolvido por: Rafael<b>Fassa</b> e Marco<b>Antonio</b>
+                    </p>
+                    <!-- ACESSIBILIDADE: link vazio sem destino (href="#") presente -->
                 </a>
             </div>
         </div>
